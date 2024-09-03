@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            width: 200px;
+            padding: 20px;
+            background-color: lightblue;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <title>Dynamic Card Search</title>
+</head>
+<body>
+    <input type="text" id="search-box" placeholder="Search cards...">
+    <button id="search-button">Search</button>
+
+    <div id="card-container" class="card-container"></div>
+
+    <script src="grid.js"></script>
+</body>
+</html>
